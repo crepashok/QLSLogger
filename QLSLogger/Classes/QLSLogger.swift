@@ -150,7 +150,7 @@ class QLSLogger {
      - parameter lineNumber:   Line number, where log method was called from
      - parameter functionName: Function name, where log method was called from
      */
-    func verbose(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
+    public func verbose(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
         #if DEBUG
             if let verboseLogStack = self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
@@ -170,7 +170,7 @@ class QLSLogger {
      - parameter lineNumber:   Line number, where log method was called from
      - parameter functionName: Function name, where log method was called from
      */
-    func debug(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
+    public func debug(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
         #if DEBUG
             if let debugLogStack = self.generateLogDescription(object, levelLabel: "DEBUG", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
@@ -190,7 +190,7 @@ class QLSLogger {
      - parameter lineNumber:   Line number, where log method was called from
      - parameter functionName: Function name, where log method was called from
      */
-    func info(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
+    public func info(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
         #if DEBUG
             if let infoLogStack = self.generateLogDescription(object, levelLabel: "INFO ", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
@@ -210,7 +210,7 @@ class QLSLogger {
      - parameter lineNumber:   Line number, where log method was called from
      - parameter functionName: Function name, where log method was called from
      */
-    func error(object: Any, LogModule module: LogModule = .None, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+    public func error(object: Any, LogModule module: LogModule = .None, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
         if let errorLogStack = self.generateLogDescription(object, levelLabel: "ERROR", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
             
             DDLogError(errorLogStack)
@@ -228,7 +228,7 @@ class QLSLogger {
      - parameter lineNumber:   Line number, where log method was called from
      - parameter functionName: Function name, where log method was called from
      */
-    func warning(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
+    public func warning(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
         #if DEBUG
             if let warningLogStack = self.generateLogDescription(object, levelLabel: "WARNING", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
