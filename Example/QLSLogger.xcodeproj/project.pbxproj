@@ -12,7 +12,9 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		7D7BC53E277DC31DA797DD97 /* Pods_QLSLogger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720EDE92323ADF32F0DDD2F4 /* Pods_QLSLogger_Example.framework */; };
+		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		629484EFD5DFF8D25FBA74E5 /* Pods_QLSLogger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */; };
+		C463BABC1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C463BABA1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		288DB8AA57404A9FD6FF4EB7 /* QLSLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QLSLogger.podspec; path = ../QLSLogger.podspec; sourceTree = "<group>"; };
-		43E7D324BEB2773663F358A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		53F708E1647F0DDDE4B57171 /* Pods-QLSLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228B8574865CD38DBF7F1599 /* Pods-QLSLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3B8958A5D47B6F7CA9BDFD21 /* Pods_QLSLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D84AC9961E96309A54080DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* QLSLogger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLSLogger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,10 +40,12 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* QLSLogger_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLSLogger_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A4F28F618F7D0DC40FD5EB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		720EDE92323ADF32F0DDD2F4 /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA4B9A9F16CA86D54E9C9FB5 /* Pods_QLSLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F19A5603BD249D3BC6ED78B9 /* Pods-QLSLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		92CD42AFC9F2D2CE0980011B /* QLSLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QLSLogger.podspec; path = ../QLSLogger.podspec; sourceTree = "<group>"; };
+		AA6B8787A8AC88CB1CFCAA24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C463BABB1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QLSLoggerCoreData.xcdatamodel; sourceTree = "<group>"; };
+		C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D7BC53E277DC31DA797DD97 /* Pods_QLSLogger_Example.framework in Frameworks */,
+				629484EFD5DFF8D25FBA74E5 /* Pods_QLSLogger_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,23 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CC7452D18DCF911904E4BA5 /* Pods */ = {
+		4AA14FCA55DBBB8510E2F737 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53F708E1647F0DDDE4B57171 /* Pods-QLSLogger_Example.debug.xcconfig */,
-				F19A5603BD249D3BC6ED78B9 /* Pods-QLSLogger_Example.release.xcconfig */,
+				13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */,
+				3B8958A5D47B6F7CA9BDFD21 /* Pods_QLSLogger_Tests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Demo */,
+				607FACD21AFB9204008FA782 /* Example for QLSLogger */,
+				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				2CC7452D18DCF911904E4BA5 /* Pods */,
-				ECF68719D2B6227A66D1E39F /* Frameworks */,
+				F649269AC01F4EBF6C085D71 /* Pods */,
+				4AA14FCA55DBBB8510E2F737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,17 +97,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Demo */ = {
+		607FACD21AFB9204008FA782 /* Example for QLSLogger */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				C463BABA1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = Demo;
+			name = "Example for QLSLogger";
 			path = QLSLogger;
 			sourceTree = "<group>";
 		};
@@ -113,23 +120,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				288DB8AA57404A9FD6FF4EB7 /* QLSLogger.podspec */,
-				43E7D324BEB2773663F358A3 /* README.md */,
-				6A4F28F618F7D0DC40FD5EB0 /* LICENSE */,
+				92CD42AFC9F2D2CE0980011B /* QLSLogger.podspec */,
+				3D84AC9961E96309A54080DF /* README.md */,
+				AA6B8787A8AC88CB1CFCAA24 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		ECF68719D2B6227A66D1E39F /* Frameworks */ = {
+		F649269AC01F4EBF6C085D71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				720EDE92323ADF32F0DDD2F4 /* Pods_QLSLogger_Example.framework */,
-				BA4B9A9F16CA86D54E9C9FB5 /* Pods_QLSLogger_Tests.framework */,
+				C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */,
+				228B8574865CD38DBF7F1599 /* Pods-QLSLogger_Example.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,12 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "QLSLogger_Example" */;
 			buildPhases = (
-				AB775EF0065629233CC7DF34 /* [CP] Check Pods Manifest.lock */,
+				B8A2D574EBD48F0A98A98AE4 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				A3FAFC3CB5E498739876F94E /* [CP] Embed Pods Frameworks */,
-				09D09441F93AD0ECFE4CAA71 /* [CP] Copy Pods Resources */,
+				1A00AA63D5FAD5DF2202786D /* [CP] Embed Pods Frameworks */,
+				26BD4618863E7B3FCFBC8330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,12 +183,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "QLSLogger_Tests" */;
 			buildPhases = (
-				A940DEDE163728809D2BF275 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				5116C429F38A934F22654D22 /* [CP] Embed Pods Frameworks */,
-				C1F3C8B7E2823776C47E54C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,37 +256,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09D09441F93AD0ECFE4CAA71 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5116C429F38A934F22654D22 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSLogger_Tests/Pods-QLSLogger_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A3FAFC3CB5E498739876F94E /* [CP] Embed Pods Frameworks */ = {
+		1A00AA63D5FAD5DF2202786D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,37 +271,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A940DEDE163728809D2BF275 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AB775EF0065629233CC7DF34 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C1F3C8B7E2823776C47E54C7 /* [CP] Copy Pods Resources */ = {
+		26BD4618863E7B3FCFBC8330 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +283,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSLogger_Tests/Pods-QLSLogger_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A2D574EBD48F0A98A98AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -332,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C463BABC1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -341,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +436,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53F708E1647F0DDDE4B57171 /* Pods-QLSLogger_Example.debug.xcconfig */;
+			baseConfigurationReference = C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QLSLogger/Info.plist;
@@ -471,7 +449,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F19A5603BD249D3BC6ED78B9 /* Pods-QLSLogger_Example.release.xcconfig */;
+			baseConfigurationReference = 228B8574865CD38DBF7F1599 /* Pods-QLSLogger_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QLSLogger/Info.plist;
@@ -545,6 +523,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C463BABA1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C463BABB1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodel */,
+			);
+			currentVersion = C463BABB1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodel */;
+			path = QLSLoggerCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
