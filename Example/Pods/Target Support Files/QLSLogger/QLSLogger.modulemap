@@ -1,6 +1,0 @@
-framework module QLSLogger {
-  umbrella header "QLSLogger-umbrella.h"
-
-  export *
-  module * { export * }
-}

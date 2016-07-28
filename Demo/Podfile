@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'QLSLogger_Example' do
+
+  pod 'QLSLogger', :path => '../'
+
+end
