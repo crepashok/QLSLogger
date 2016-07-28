@@ -9,36 +9,39 @@
 /* Begin PBXBuildFile section */
 		02A39F8B3A72D3E336E34139356F6A5E /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AFF8741F7785D593B7EE1094C2ED7E /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		093609D078A154B7E17835F75A487E3C /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F29ED9471FD1A3FD9F16AEED746EB98 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E7BE60D7679BA65ED1972CDC73EE24D /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EEE3191DC345A55DEF8E65F2DEE28C /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1484EDDBA5B11CAD6989C87BB5D265E5 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA276F38A21A3C1768B4DBBABC3FF7 /* SwiftHEXColors-dummy.m */; };
-		19FB8040B1ECF8B487443CB331587BA6 /* Pods-QLSLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F89F041426075C4843515F101E297E2 /* Pods-QLSLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DF87E020A6DFB19CB0EDC38CF4A8494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		22665618AD44D03BD629D4D0B68D18C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		159607FF90AEA54770225DC6C55A8AF5 /* QLSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30989E87067B3AAC8CAD6F6ACC906AEB /* QLSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22665618AD44D03BD629D4D0B68D18C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */; };
 		2A6A29CAD800ED3F71FC72F380E5ADBB /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0103C9FC042406D4D87A0B582A0EB9 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		30314B36B0C3A2F6B1BB05019DE7857A /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D54FD9DD90C6230CF47CAB836E94090 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		306B3D9AF1FA4C8D31EBFE41F90F8703 /* QLSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE56C9518AE3FD51BD0AC0B514EFE1 /* QLSLogger-dummy.m */; };
+		312D3553912FDA975F0954DF995539B7 /* SwiftHEXColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC691BFDEDE71467BF3C3EC8E666A02A /* SwiftHEXColors.framework */; };
 		3DB7862FB83E65375AB21FC76E2DE753 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A62B509BD60013E24525320D19FA532 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42BAAC271E67E2DA9F8035C4B650C189 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A8651386EB8CA54B5C732D8B77CB82 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4661B2C1110AEF944B8A9848080FC2A2 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C113244D6E65CC4F1E63CBEBB79D84 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52A064CA8AE53110D98FA8BEF85CC084 /* Pods-QLSLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0D19326EB7CD87CDE7E1E28B1FBB5 /* Pods-QLSLogger_Example-dummy.m */; };
 		546205F68C5B619AF8075F83B5CE4FA7 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94D37231FAECB393E80CCBF1738C01 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		562372B9C5736B83F76363EED364336B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		592300B03021086FC4A2A331FB444239 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */; };
 		6F7DD4B4474BB70863C894D340EE5F94 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F33E64681E83FDF0A435D5D041BB69 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		72F00C177A48D6D9B0AE5EA4488903EB /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746E145272FE1F1B98265950F496FF4C /* CocoaLumberjack.framework */; };
 		7E079AD6AC309071A275DECA8F2A2933 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF910DB2069B1084A6A0730C0F0B7B2 /* DDLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		83DBBC894A6203F6E4CFCDDA4911C9AF /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A928CE0EE8988A4112471275D202CD /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F111643F80DE390005D21E15AE090A8 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A8651386EB8CA54B5C732D8B77CB82 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		903C373321B237294AE4541BC5654749 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3769866156676035FAE98DB7EDAF9C /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		91FDF8A5A1BC96856AC4470759421D6B /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0127B8606173B5191D37D1535053F874 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92532FBA48A9F78AD75ACF0768A6AB98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */; };
 		948D94766FEB76BCD3ADC9D5386A9ED6 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A551056D9AF85D6AD41FB22C8C94229 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9630205806FA13CEE278F4E4FA6DA3F0 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2F0EF3AA28AC647764EA48160F500A /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E1B1739B166CAFDAE67D6EECE0A25E8 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EEE3191DC345A55DEF8E65F2DEE28C /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5EA08F3B1BABC555CCEEF9A05A28039 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA276F38A21A3C1768B4DBBABC3FF7 /* SwiftHEXColors-dummy.m */; };
 		BD687FC56130CEEB1049FEEC1127C5F7 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 051163CB381C496857DE70C6234B9E0A /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED21B6237708EC89E1CDC9E7E4FCB49 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BADC585509D07DAD0CDEB7134F9F5E /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C46AA5741D4A28C00098C541 /* QLSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46AA5731D4A28C00098C541 /* QLSLogger.swift */; };
-		C46AA5751D4A28C00098C541 /* QLSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46AA5731D4A28C00098C541 /* QLSLogger.swift */; };
-		C46AA5761D4A28C00098C541 /* QLSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46AA5731D4A28C00098C541 /* QLSLogger.swift */; };
+		C2E4DC80AD0E69E072BC2315CDD2EB64 /* QLSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D88CF5CDF9316F0BEE167A7EE0FC93 /* QLSLogger.swift */; };
+		C8062196DD74B3F47AE24559CF41D0AF /* Pods-QLSLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F89F041426075C4843515F101E297E2 /* Pods-QLSLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA2FA75B9755AD32A2A603BC0DA7F96D /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1357BB749550F0C9339DA3CB5D75E6 /* SwiftHEXColors.swift */; };
 		CC50CAF7FF957283D42DEBF5C63B12FE /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00537F841514E2B27D6B3094FACE33CD /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CD81315E9E8FD7FD4F3C4D28BAB50C3D /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B562EC0FD72519BF64D9EACADD9EDBC /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2D417A51677012E9EEF8F1297F87231 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 757468D78B59C85A94E38E86D4972B67 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3D0B1CD8FB550FFC2A37B2BF4A692D4 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1357BB749550F0C9339DA3CB5D75E6 /* SwiftHEXColors.swift */; };
 		D5B5AA391818C821A981129B1E1388F5 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3BF23BC5547ABE23AE3754F235420E /* CocoaLumberjack-dummy.m */; };
+		D88CD9C5B60ED65D78C25005D6E97101 /* Pods-QLSLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0D19326EB7CD87CDE7E1E28B1FBB5 /* Pods-QLSLogger_Example-dummy.m */; };
+		DC54866A41D62B7D184DE16A2FE9D096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */; };
 		ECB58C2372417300030D10FE302FD32E /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CD4A4E6B484DF969563587E6C2341C /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE61F282567EEFBBDC8BA0BE06433C6F /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C02237474CC006495829941B11EE3CC /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFD1A8C17A9631363C4AC6E2BE2F1434 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 84142C493F154D0E3D298AA57A48ED83 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,19 +50,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8133184BF08529CB0AFF70967C1A42C4 /* PBXContainerItemProxy */ = {
+		17DC74BBCAEC215A52042CEC4C8AD09E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 11A64BEE7E3E1E0CEC1B428E3C9AED7C;
+			remoteGlobalIDString = 48DD08096CBF925C6D34ED8B94292E29;
 			remoteInfo = SwiftHEXColors;
 		};
-		C528A8C1342846C22951C044246AF5D0 /* PBXContainerItemProxy */ = {
+		17F7AEF249E3A2C157A1216D1FA502CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D082FD9722F53B9C3A1229257D4008F7;
 			remoteInfo = CocoaLumberjack;
+		};
+		34B2CFE89BB7D8EC4AF3660AB5012422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D931C7BFAFB5E552794183965F2230B;
+			remoteInfo = QLSLogger;
+		};
+		77027BD38E0698D3101C8D83AE1C309D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D082FD9722F53B9C3A1229257D4008F7;
+			remoteInfo = CocoaLumberjack;
+		};
+		8CE2B3F819A47C79C2D5B0CADCDE9C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48DD08096CBF925C6D34ED8B94292E29;
+			remoteInfo = SwiftHEXColors;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,66 +92,67 @@
 		0127B8606173B5191D37D1535053F874 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
 		01BADC585509D07DAD0CDEB7134F9F5E /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		051163CB381C496857DE70C6234B9E0A /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		0A22F49E0E28C81D159A88985C597785 /* QLSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QLSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A62B509BD60013E24525320D19FA532 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
-		17CA1B61F54CC595284336D6D95E8EA2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F0B97716914D6C7DB0E70A47502B3C6 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF910DB2069B1084A6A0730C0F0B7B2 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
 		29E4F6C5B674A15E2EF29BDDAAF81BDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB42BDF5C9F8D08ED3ACA7DDADFC4A2 /* Pods-QLSLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QLSLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2FAA276F38A21A3C1768B4DBBABC3FF7 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
+		30989E87067B3AAC8CAD6F6ACC906AEB /* QLSLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QLSLogger-umbrella.h"; sourceTree = "<group>"; };
 		3F29ED9471FD1A3FD9F16AEED746EB98 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
 		42CD4A4E6B484DF969563587E6C2341C /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
 		4F74163E3F6594795231C2F27CC981BF /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		5218C02578499A7D10CE9B0CCBDDD404 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		5C4A2027DDB39FDB294C6E99E5069E93 /* QLSLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QLSLogger-prefix.pch"; sourceTree = "<group>"; };
+		5F0DA445A4148ECE45A62B5E4B0EEA19 /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F89F041426075C4843515F101E297E2 /* Pods-QLSLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QLSLogger_Example-umbrella.h"; sourceTree = "<group>"; };
 		68D082C92903A521445F9CCF4497E193 /* Pods-QLSLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QLSLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6A551056D9AF85D6AD41FB22C8C94229 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
 		6BD15127CE517FB2D01272C7D3DF9020 /* Pods-QLSLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QLSLogger_Example.modulemap"; sourceTree = "<group>"; };
 		6C02237474CC006495829941B11EE3CC /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
 		6E2F0EF3AA28AC647764EA48160F500A /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		6EBACB1A42063A8372F2480D01DCC948 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		746E145272FE1F1B98265950F496FF4C /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757468D78B59C85A94E38E86D4972B67 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		7626E162FBC5D5024349688401F77DB4 /* QLSLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QLSLogger.modulemap; sourceTree = "<group>"; };
 		7B562EC0FD72519BF64D9EACADD9EDBC /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
-		7BDB13940DF7B83E17024DD6EDCC1159 /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9462C9837058067BCE3418C6DFE533 /* Pods-QLSLogger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QLSLogger_Example-resources.sh"; sourceTree = "<group>"; };
+		7DDE56C9518AE3FD51BD0AC0B514EFE1 /* QLSLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QLSLogger-dummy.m"; sourceTree = "<group>"; };
 		7F3769866156676035FAE98DB7EDAF9C /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
 		81A6EB2EFEADECED1B11F103023FDBC9 /* Pods-QLSLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QLSLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		84142C493F154D0E3D298AA57A48ED83 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		85C3E858B9764FF54D63F7B4992C121D /* QLSLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QLSLogger.xcconfig; sourceTree = "<group>"; };
 		85EEE3191DC345A55DEF8E65F2DEE28C /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94A8651386EB8CA54B5C732D8B77CB82 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
 		96A928CE0EE8988A4112471275D202CD /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
 		9757A848BFEB8FF4C41DA25EBAFA2478 /* Pods-QLSLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QLSLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		97C113244D6E65CC4F1E63CBEBB79D84 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		9A58724C6ACB3D1AC03966192BD2C7ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D54FD9DD90C6230CF47CAB836E94090 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		A370A7154ECE3A037ED11D6D51E5E87D /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
 		A60B3FF684921192EA08090DC2CAD3D5 /* Pods-QLSLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QLSLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AC0103C9FC042406D4D87A0B582A0EB9 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
 		B2F33E64681E83FDF0A435D5D041BB69 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
 		BA94D37231FAECB393E80CCBF1738C01 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		BC691BFDEDE71467BF3C3EC8E666A02A /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17F76B120571F23B86659F6768F1B18 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C62E4C73962D0CB7AACF4F10570BAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C46AA5731D4A28C00098C541 /* QLSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QLSLogger.swift; path = ../../Sources/QLSLogger/QLSLogger.swift; sourceTree = "<group>"; };
 		C53FCCABB4A28E6B87DE0A6194B281B9 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
 		C6764B212D85FF1A7C32970FC3081AB7 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D5B0D19326EB7CD87CDE7E1E28B1FBB5 /* Pods-QLSLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QLSLogger_Example-dummy.m"; sourceTree = "<group>"; };
 		DA1357BB749550F0C9339DA3CB5D75E6 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
 		DE3BF23BC5547ABE23AE3754F235420E /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
 		E2BAD9D70CF9F13A9A346143A707D29A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F06A079232D6412FDF54E471544E2B /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		F1AFF8741F7785D593B7EE1094C2ED7E /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		F2D88CF5CDF9316F0BEE167A7EE0FC93 /* QLSLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QLSLogger.swift; sourceTree = "<group>"; };
+		F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F4A86D53B6BF2F716E14281C440E6D5A /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
 		FAACAA6997537404767C74A94AC9A8AF /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		351661E060F29EE5283BF173604FEAE0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				562372B9C5736B83F76363EED364336B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4AEC251EB34CAF0A4D7614C38C9534F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,11 +161,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84A70BECD06B55DADBB64F3A8C0F91B4 /* Frameworks */ = {
+		4F48D110E81DB394AA02D33108EB405B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF87E020A6DFB19CB0EDC38CF4A8494 /* Foundation.framework in Frameworks */,
+				92532FBA48A9F78AD75ACF0768A6AB98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85CF99E3E2AE1BE77FAF6E446CEA1EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592300B03021086FC4A2A331FB444239 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DEBAEE7998DF4D18FB04604DBC392D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F00C177A48D6D9B0AE5EA4488903EB /* CocoaLumberjack.framework in Frameworks */,
+				DC54866A41D62B7D184DE16A2FE9D096 /* Foundation.framework in Frameworks */,
+				312D3553912FDA975F0954DF995539B7 /* SwiftHEXColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,24 +211,6 @@
 			path = "../Target Support Files/CocoaLumberjack";
 			sourceTree = "<group>";
 		};
-		320B3397E11D36F43FC4EEB01C9A579F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17CA1B61F54CC595284336D6D95E8EA2 /* CocoaLumberjack.framework */,
-				7BDB13940DF7B83E17024DD6EDCC1159 /* Pods_QLSLogger_Example.framework */,
-				1F0B97716914D6C7DB0E70A47502B3C6 /* SwiftHEXColors.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		4F72DD9175B9351D27BF5BF511B8B96F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +236,16 @@
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
+		6663514854FC59DE8341618B02C3B478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746E145272FE1F1B98265950F496FF4C /* CocoaLumberjack.framework */,
+				BC691BFDEDE71467BF3C3EC8E666A02A /* SwiftHEXColors.framework */,
+				8C6772D399E049CEAC01EC3709AB95D5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77BF5DD2252511829829298218A28ED9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +258,36 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				F1CE76EFAAB571CC346F285D27192168 /* Classes */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				86D3F44A66C4B0979CC14658E9891C74 /* Development Pods */,
+				6663514854FC59DE8341618B02C3B478 /* Frameworks */,
 				9ABA059CABC7FFF55CADAD1CD3FD1AE6 /* Pods */,
-				320B3397E11D36F43FC4EEB01C9A579F /* Products */,
+				C741020A8F9133172BFA33DB8C596F06 /* Products */,
 				77BF5DD2252511829829298218A28ED9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		85684AACF945D673CB625BC27FAE0B76 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2D88CF5CDF9316F0BEE167A7EE0FC93 /* QLSLogger.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		86D3F44A66C4B0979CC14658E9891C74 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B75F789B68AA168AB903C8632176F924 /* QLSLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8C6772D399E049CEAC01EC3709AB95D5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F489087004CB193D2CF786E1CEAC3411 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		930A607E97724E0AF267D3072869E322 /* Swift */ = {
@@ -237,6 +296,20 @@
 				F4A86D53B6BF2F716E14281C440E6D5A /* CocoaLumberjack.swift */,
 			);
 			name = Swift;
+			sourceTree = "<group>";
+		};
+		98462DF1343035BB20120B291745EAC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A58724C6ACB3D1AC03966192BD2C7ED /* Info.plist */,
+				7626E162FBC5D5024349688401F77DB4 /* QLSLogger.modulemap */,
+				85C3E858B9764FF54D63F7B4992C121D /* QLSLogger.xcconfig */,
+				7DDE56C9518AE3FD51BD0AC0B514EFE1 /* QLSLogger-dummy.m */,
+				5C4A2027DDB39FDB294C6E99E5069E93 /* QLSLogger-prefix.pch */,
+				30989E87067B3AAC8CAD6F6ACC906AEB /* QLSLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/QLSLogger";
 			sourceTree = "<group>";
 		};
 		9ABA059CABC7FFF55CADAD1CD3FD1AE6 /* Pods */ = {
@@ -258,12 +331,25 @@
 			path = SwiftHEXColors;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B75F789B68AA168AB903C8632176F924 /* QLSLogger */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				85684AACF945D673CB625BC27FAE0B76 /* Sources */,
+				98462DF1343035BB20120B291745EAC5 /* Support Files */,
 			);
-			name = Frameworks;
+			name = QLSLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C741020A8F9133172BFA33DB8C596F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EBACB1A42063A8372F2480D01DCC948 /* CocoaLumberjack.framework */,
+				5F0DA445A4148ECE45A62B5E4B0EEA19 /* Pods_QLSLogger_Example.framework */,
+				0A22F49E0E28C81D159A88985C597785 /* QLSLogger.framework */,
+				C17F76B120571F23B86659F6768F1B18 /* SwiftHEXColors.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CA0C65AA3935E722F48714F736A70121 /* Support Files */ = {
@@ -321,31 +407,31 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		F1CE76EFAAB571CC346F285D27192168 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C46AA5731D4A28C00098C541 /* QLSLogger.swift */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		525578411764D166F91706955C61B8BC /* Headers */ = {
+		4BE5452036DAADF352238FFB6D9290B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FB8040B1ECF8B487443CB331587BA6 /* Pods-QLSLogger_Example-umbrella.h in Headers */,
+				C8062196DD74B3F47AE24559CF41D0AF /* Pods-QLSLogger_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD75B079EFFBFB2F5480907DF2C97049 /* Headers */ = {
+		54B852BA819643B851713A528C6CEE3A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42BAAC271E67E2DA9F8035C4B650C189 /* SwiftHEXColors-umbrella.h in Headers */,
-				0E7BE60D7679BA65ED1972CDC73EE24D /* SwiftHEXColors.h in Headers */,
+				8F111643F80DE390005D21E15AE090A8 /* SwiftHEXColors-umbrella.h in Headers */,
+				9E1B1739B166CAFDAE67D6EECE0A25E8 /* SwiftHEXColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3BB91AC26B3D25A9C0C87481BA35031 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159607FF90AEA54770225DC6C55A8AF5 /* QLSLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,13 +459,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11A64BEE7E3E1E0CEC1B428E3C9AED7C /* SwiftHEXColors */ = {
+		48DD08096CBF925C6D34ED8B94292E29 /* SwiftHEXColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ACBAD989D5B337BEF746F7E54B62F93 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildConfigurationList = 32E9056895726354876873ABF0C86C3E /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
 			buildPhases = (
-				0489DAC689A5F151FD462A3FB17226F9 /* Sources */,
-				351661E060F29EE5283BF173604FEAE0 /* Frameworks */,
-				CD75B079EFFBFB2F5480907DF2C97049 /* Headers */,
+				34E3229E8F4F15B9F529ED7951B21D54 /* Sources */,
+				4F48D110E81DB394AA02D33108EB405B /* Frameworks */,
+				54B852BA819643B851713A528C6CEE3A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -387,26 +473,26 @@
 			);
 			name = SwiftHEXColors;
 			productName = SwiftHEXColors;
-			productReference = 1F0B97716914D6C7DB0E70A47502B3C6 /* SwiftHEXColors.framework */;
+			productReference = C17F76B120571F23B86659F6768F1B18 /* SwiftHEXColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BD20C969C62AF658D7D298ADFDF9DEBF /* Pods-QLSLogger_Example */ = {
+		5D931C7BFAFB5E552794183965F2230B /* QLSLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9FA5445F14DB5D2C68F46E16BD84D09 /* Build configuration list for PBXNativeTarget "Pods-QLSLogger_Example" */;
+			buildConfigurationList = 2254D473E165C5DDC5471252DB2ABCD1 /* Build configuration list for PBXNativeTarget "QLSLogger" */;
 			buildPhases = (
-				BF91E2F3694168651F44EC0F26C514BA /* Sources */,
-				84A70BECD06B55DADBB64F3A8C0F91B4 /* Frameworks */,
-				525578411764D166F91706955C61B8BC /* Headers */,
+				D050BA8A7C19B923D90039EEF977FC25 /* Sources */,
+				E5DEBAEE7998DF4D18FB04604DBC392D /* Frameworks */,
+				A3BB91AC26B3D25A9C0C87481BA35031 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D501C700ACB7886753A2254EBA17239 /* PBXTargetDependency */,
-				918D8B58AC29D5C9D764339772102059 /* PBXTargetDependency */,
+				17380208153282D2DBA68293DEB5A826 /* PBXTargetDependency */,
+				8FE773FFB6D44A05AF38446CD83D2955 /* PBXTargetDependency */,
 			);
-			name = "Pods-QLSLogger_Example";
-			productName = "Pods-QLSLogger_Example";
-			productReference = 7BDB13940DF7B83E17024DD6EDCC1159 /* Pods_QLSLogger_Example.framework */;
+			name = QLSLogger;
+			productName = QLSLogger;
+			productReference = 0A22F49E0E28C81D159A88985C597785 /* QLSLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D082FD9722F53B9C3A1229257D4008F7 /* CocoaLumberjack */ = {
@@ -423,7 +509,27 @@
 			);
 			name = CocoaLumberjack;
 			productName = CocoaLumberjack;
-			productReference = 17CA1B61F54CC595284336D6D95E8EA2 /* CocoaLumberjack.framework */;
+			productReference = 6EBACB1A42063A8372F2480D01DCC948 /* CocoaLumberjack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F13222EFB26FCC67CFA4FACDB75E6B2C /* Pods-QLSLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C6BC121878847224301A7E375EC7761 /* Build configuration list for PBXNativeTarget "Pods-QLSLogger_Example" */;
+			buildPhases = (
+				6D7B9EE46358F803BD5D7F0C94590CC9 /* Sources */,
+				85CF99E3E2AE1BE77FAF6E446CEA1EFB /* Frameworks */,
+				4BE5452036DAADF352238FFB6D9290B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6046A3E574DBF8B7ACF8138C08852D12 /* PBXTargetDependency */,
+				5D12F4CEAE36CD4A3C9683847D639670 /* PBXTargetDependency */,
+				E6ED0A07BB12A9D53BD67DEF42E3DA2D /* PBXTargetDependency */,
+			);
+			name = "Pods-QLSLogger_Example";
+			productName = "Pods-QLSLogger_Example";
+			productReference = 5F0DA445A4148ECE45A62B5E4B0EEA19 /* Pods_QLSLogger_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -443,25 +549,33 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 320B3397E11D36F43FC4EEB01C9A579F /* Products */;
+			productRefGroup = C741020A8F9133172BFA33DB8C596F06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D082FD9722F53B9C3A1229257D4008F7 /* CocoaLumberjack */,
-				BD20C969C62AF658D7D298ADFDF9DEBF /* Pods-QLSLogger_Example */,
-				11A64BEE7E3E1E0CEC1B428E3C9AED7C /* SwiftHEXColors */,
+				F13222EFB26FCC67CFA4FACDB75E6B2C /* Pods-QLSLogger_Example */,
+				5D931C7BFAFB5E552794183965F2230B /* QLSLogger */,
+				48DD08096CBF925C6D34ED8B94292E29 /* SwiftHEXColors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0489DAC689A5F151FD462A3FB17226F9 /* Sources */ = {
+		34E3229E8F4F15B9F529ED7951B21D54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46AA5761D4A28C00098C541 /* QLSLogger.swift in Sources */,
-				1484EDDBA5B11CAD6989C87BB5D265E5 /* SwiftHEXColors-dummy.m in Sources */,
-				D3D0B1CD8FB550FFC2A37B2BF4A692D4 /* SwiftHEXColors.swift in Sources */,
+				A5EA08F3B1BABC555CCEEF9A05A28039 /* SwiftHEXColors-dummy.m in Sources */,
+				CA2FA75B9755AD32A2A603BC0DA7F96D /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7B9EE46358F803BD5D7F0C94590CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88CD9C5B60ED65D78C25005D6E97101 /* Pods-QLSLogger_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +589,6 @@
 				903C373321B237294AE4541BC5654749 /* DDASLLogCapture.m in Sources */,
 				6F7DD4B4474BB70863C894D340EE5F94 /* DDASLLogger.m in Sources */,
 				546205F68C5B619AF8075F83B5CE4FA7 /* DDContextFilterLogFormatter.m in Sources */,
-				C46AA5741D4A28C00098C541 /* QLSLogger.swift in Sources */,
 				30314B36B0C3A2F6B1BB05019DE7857A /* DDDispatchQueueLogFormatter.m in Sources */,
 				948D94766FEB76BCD3ADC9D5386A9ED6 /* DDFileLogger.m in Sources */,
 				7E079AD6AC309071A275DECA8F2A2933 /* DDLog.m in Sources */,
@@ -484,29 +597,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF91E2F3694168651F44EC0F26C514BA /* Sources */ = {
+		D050BA8A7C19B923D90039EEF977FC25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46AA5751D4A28C00098C541 /* QLSLogger.swift in Sources */,
-				52A064CA8AE53110D98FA8BEF85CC084 /* Pods-QLSLogger_Example-dummy.m in Sources */,
+				306B3D9AF1FA4C8D31EBFE41F90F8703 /* QLSLogger-dummy.m in Sources */,
+				C2E4DC80AD0E69E072BC2315CDD2EB64 /* QLSLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D501C700ACB7886753A2254EBA17239 /* PBXTargetDependency */ = {
+		17380208153282D2DBA68293DEB5A826 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaLumberjack;
 			target = D082FD9722F53B9C3A1229257D4008F7 /* CocoaLumberjack */;
-			targetProxy = C528A8C1342846C22951C044246AF5D0 /* PBXContainerItemProxy */;
+			targetProxy = 77027BD38E0698D3101C8D83AE1C309D /* PBXContainerItemProxy */;
 		};
-		918D8B58AC29D5C9D764339772102059 /* PBXTargetDependency */ = {
+		5D12F4CEAE36CD4A3C9683847D639670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QLSLogger;
+			target = 5D931C7BFAFB5E552794183965F2230B /* QLSLogger */;
+			targetProxy = 34B2CFE89BB7D8EC4AF3660AB5012422 /* PBXContainerItemProxy */;
+		};
+		6046A3E574DBF8B7ACF8138C08852D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = D082FD9722F53B9C3A1229257D4008F7 /* CocoaLumberjack */;
+			targetProxy = 17F7AEF249E3A2C157A1216D1FA502CE /* PBXContainerItemProxy */;
+		};
+		8FE773FFB6D44A05AF38446CD83D2955 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHEXColors;
-			target = 11A64BEE7E3E1E0CEC1B428E3C9AED7C /* SwiftHEXColors */;
-			targetProxy = 8133184BF08529CB0AFF70967C1A42C4 /* PBXContainerItemProxy */;
+			target = 48DD08096CBF925C6D34ED8B94292E29 /* SwiftHEXColors */;
+			targetProxy = 17DC74BBCAEC215A52042CEC4C8AD09E /* PBXContainerItemProxy */;
+		};
+		E6ED0A07BB12A9D53BD67DEF42E3DA2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHEXColors;
+			target = 48DD08096CBF925C6D34ED8B94292E29 /* SwiftHEXColors */;
+			targetProxy = 8CE2B3F819A47C79C2D5B0CADCDE9C34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -549,11 +680,10 @@
 			};
 			name = Release;
 		};
-		34BA2216F50C33A9B5C0204DC50C4B19 /* Release */ = {
+		285B259222930FD140A258E11883E146 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81A6EB2EFEADECED1B11F103023FDBC9 /* Pods-QLSLogger_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -583,34 +713,35 @@
 			};
 			name = Release;
 		};
-		5BDEB913F00D613853CE035149EE35D2 /* Release */ = {
+		37679D765EECC318B20B13E1275CFC18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53FCCABB4A28E6B87DE0A6194B281B9 /* SwiftHEXColors.xcconfig */;
+			baseConfigurationReference = 85C3E858B9764FF54D63F7B4992C121D /* QLSLogger.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/QLSLogger/QLSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QLSLogger/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftHEXColors;
+				MODULEMAP_FILE = "Target Support Files/QLSLogger/QLSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QLSLogger;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6153056CA39844116C4EA589D262663F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -641,41 +772,10 @@
 			};
 			name = Release;
 		};
-		95AE81D1AE5DFC11C08834AD541DC12B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53FCCABB4A28E6B87DE0A6194B281B9 /* SwiftHEXColors.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftHEXColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B3AA0D24CF2F0C166ADCFD5D15AD4B2B /* Debug */ = {
+		9352028E30107C6C1D1157F9EEB02124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68D082C92903A521445F9CCF4497E193 /* Pods-QLSLogger_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -697,6 +797,36 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_QLSLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1C76BB8C911B73009313750B212F4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53FCCABB4A28E6B87DE0A6194B281B9 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftHEXColors;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -748,6 +878,35 @@
 			};
 			name = Debug;
 		};
+		D59ED9F2CA3E72AE85B65417A8C780AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53FCCABB4A28E6B87DE0A6194B281B9 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DF9E0C8AD7E4C434574B876B060F91EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAACAA6997537404767C74A94AC9A8AF /* CocoaLumberjack.xcconfig */;
@@ -778,6 +937,35 @@
 			};
 			name = Debug;
 		};
+		FCC5C57C78F8028AD1DB2DA6D8488171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C3E858B9764FF54D63F7B4992C121D /* QLSLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QLSLogger/QLSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QLSLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QLSLogger/QLSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QLSLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -790,11 +978,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ACBAD989D5B337BEF746F7E54B62F93 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+		2254D473E165C5DDC5471252DB2ABCD1 /* Build configuration list for PBXNativeTarget "QLSLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95AE81D1AE5DFC11C08834AD541DC12B /* Debug */,
-				5BDEB913F00D613853CE035149EE35D2 /* Release */,
+				37679D765EECC318B20B13E1275CFC18 /* Debug */,
+				FCC5C57C78F8028AD1DB2DA6D8488171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -808,11 +996,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9FA5445F14DB5D2C68F46E16BD84D09 /* Build configuration list for PBXNativeTarget "Pods-QLSLogger_Example" */ = {
+		32E9056895726354876873ABF0C86C3E /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3AA0D24CF2F0C166ADCFD5D15AD4B2B /* Debug */,
-				34BA2216F50C33A9B5C0204DC50C4B19 /* Release */,
+				A1C76BB8C911B73009313750B212F4C9 /* Debug */,
+				D59ED9F2CA3E72AE85B65417A8C780AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C6BC121878847224301A7E375EC7761 /* Build configuration list for PBXNativeTarget "Pods-QLSLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9352028E30107C6C1D1157F9EEB02124 /* Debug */,
+				285B259222930FD140A258E11883E146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
