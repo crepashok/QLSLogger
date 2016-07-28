@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C463BABC1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C463BABA1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld */; };
+		C4E65E161D4A420C001947BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E65E151D4A420C001947BD /* Constants.swift */; };
 		F88FF0DC100C2C107A6735B0 /* Pods_QLSLogger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E405C70269CCCD807BB475 /* Pods_QLSLogger_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		AA6B8787A8AC88CB1CFCAA24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B7E405C70269CCCD807BB475 /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C463BABB1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QLSLoggerCoreData.xcdatamodel; sourceTree = "<group>"; };
+		C4E65E151D4A420C001947BD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				C4E65E151D4A420C001947BD /* Constants.swift */,
 			);
 			name = "Example for QLSLogger";
 			path = QLSLogger;
@@ -309,6 +312,7 @@
 				C463BABC1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C4E65E161D4A420C001947BD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,9 +441,12 @@
 			baseConfigurationReference = C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = QLSLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"-DDEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -450,6 +457,8 @@
 			baseConfigurationReference = 228B8574865CD38DBF7F1599 /* Pods-QLSLogger_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = QLSLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

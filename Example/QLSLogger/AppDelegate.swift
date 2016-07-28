@@ -18,12 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        QLSLogger.log.setupSharedLogInstance()
+        sharedLogger.setupSharedLogInstance()
+        
+        sharedLogger.verbose("Application stated!!!", LogModule:.CoreData)
         
         let masterNavigationController = self.window!.rootViewController as! UINavigationController
         let controller = masterNavigationController.topViewController as! ViewController
         controller.managedObjectContext = self.managedObjectContext
-        
         
         return true
     }

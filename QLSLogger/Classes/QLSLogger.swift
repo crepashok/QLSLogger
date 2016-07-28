@@ -11,14 +11,14 @@ import CocoaLumberjack
 import SwiftHEXColors
 
 
-enum LogModule: Int, CustomStringConvertible {
+public enum LogModule: Int, CustomStringConvertible {
     case Http
     case CoreData
     case JSON
     case UI
     case None
     
-    var description: String {
+    public var description: String {
         switch self {
         case .Http:
             return "HTTP     "
@@ -38,13 +38,13 @@ enum LogModule: Int, CustomStringConvertible {
 
 
 /**
- * Mail Travel Logger is designet for displaying logs with different levels,
+ * QLSLogger is designet for displaying logs with different levels,
  * modules, colors and system information such as thread type, file, method
  * and line number information.
  */
-class QLSLogger {
+public class QLSLogger {
     
-    static internal let log = QLSLogger()
+    public static let sharedInstance = QLSLogger()
     
     /**
      Console text colors for all log levels. For defining colors was used extension of UIColor: init?(hexString: String)
@@ -63,7 +63,7 @@ class QLSLogger {
      
      @see: https://github.com/CocoaLumberjack/CocoaLumberjack
      */
-    func setupSharedLogInstance() {
+    public func setupSharedLogInstance() {
         
         DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
         DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
@@ -151,6 +151,7 @@ class QLSLogger {
      - parameter functionName: Function name, where log method was called from
      */
     public func verbose(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
+        print(self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName))
         #if DEBUG
             if let verboseLogStack = self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 

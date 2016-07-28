@@ -22,7 +22,7 @@ pod "QLSLogger"
 
 ## Author
 
-Pasha, pasha@qlicks.nl
+Pasha, pasha.cretsu@gmail.com
 
 ## License
 
