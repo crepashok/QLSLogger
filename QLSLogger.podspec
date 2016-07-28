@@ -21,7 +21,7 @@ Great tool for displaying logs with different log-levels, log-module, thread ide
     #s.frameworks        = 'UIKit'
 
     s.requires_arc      = true
-    s.source_files      = "QLSLogger/Sources/*.swift"
+    s.source_files      = "Sources/*.swift"
 
     s.ios.deployment_target = '8.0'
 
