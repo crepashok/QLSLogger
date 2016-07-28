@@ -19,7 +19,7 @@ Great tool for displaying logs with different log-levels, log-module, thread ide
     s.author           = { 'Pasha' => 'pasha@qlicks.nl' }
     s.source           = { :git => 'https://github.com/crepashok/QLSLogger.git', :tag => s.version.to_s }
     s.ios.deployment_target = '8.0'
-    s.source_files = 'QLSLogger/Classes/*'
+    s.source_files = 'Pod/Classes/*'
     s.frameworks = 'UIKit'
     s.dependency 'CocoaLumberjack/Swift', '~> 2.3.0'
     s.dependency 'SwiftHEXColors', '~> 1.0'
