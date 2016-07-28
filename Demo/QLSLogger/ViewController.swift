@@ -15,7 +15,12 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        sharedLogger.verbose("This is Verbose log. This log is displayed from MAIN THREAD", LogModule: .UI)
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            sharedLogger.debug("This is Debug log. Now we make some work in background thread.")
+        }
     }
     
     @IBAction func insertNewObject(sender: AnyObject) {

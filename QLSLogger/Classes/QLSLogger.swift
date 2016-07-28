@@ -44,7 +44,7 @@ public enum LogModule: Int, CustomStringConvertible {
  */
 public class QLSLogger {
     
-    public static let sharedInstance = QLSLogger()
+    public static let log = QLSLogger()
     
     /**
      Console text colors for all log levels. For defining colors was used extension of UIColor: init?(hexString: String)

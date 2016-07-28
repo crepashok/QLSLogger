@@ -8,4 +8,4 @@
 
 import QLSLogger
 
-let sharedLogger = QLSLogger.sharedInstance
+let sharedLogger = QLSLogger.log

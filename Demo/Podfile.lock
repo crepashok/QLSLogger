@@ -6,7 +6,7 @@ PODS:
     - CocoaLumberjack/Default
   - CocoaLumberjack/Swift (2.3.0):
     - CocoaLumberjack/Extensions
-  - QLSLogger (0.1.0):
+  - QLSLogger (0.1.2):
     - CocoaLumberjack/Swift (~> 2.3.0)
     - SwiftHEXColors (~> 1.0)
   - SwiftHEXColors (1.0.4)
@@ -16,11 +16,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   QLSLogger:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
-  QLSLogger: a7076467a577f36f7a405f65e35fdd79b930c5c6
+  QLSLogger: 3265ce353f97f651b74ae53e71a055860697c534
   SwiftHEXColors: b0ecc7bd83a1aa2e1956f9ba51f55ebb2bcf86ef
 
 PODFILE CHECKSUM: b178ffe43adf190e549f7753adde518f3e9aa654
