@@ -2,6 +2,6 @@ use_frameworks!
 
 target 'QLSLogger_Example' do
     
-  pod 'QLSLogger', :path => '../'
+    pod 'QLSLogger', :path => '../'
 
 end

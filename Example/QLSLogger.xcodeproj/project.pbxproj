@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		629484EFD5DFF8D25FBA74E5 /* Pods_QLSLogger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */; };
 		C463BABC1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C463BABA1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodeld */; };
+		F88FF0DC100C2C107A6735B0 /* Pods_QLSLogger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E405C70269CCCD807BB475 /* Pods_QLSLogger_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		228B8574865CD38DBF7F1599 /* Pods-QLSLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3B8958A5D47B6F7CA9BDFD21 /* Pods_QLSLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D84AC9961E96309A54080DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* QLSLogger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLSLogger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +42,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		92CD42AFC9F2D2CE0980011B /* QLSLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QLSLogger.podspec; path = ../QLSLogger.podspec; sourceTree = "<group>"; };
 		AA6B8787A8AC88CB1CFCAA24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B7E405C70269CCCD807BB475 /* Pods_QLSLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLSLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C463BABB1D49E8670098A645 /* QLSLoggerCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QLSLoggerCoreData.xcdatamodel; sourceTree = "<group>"; };
 		C8F96F9199147ABEE3272B59 /* Pods-QLSLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSLogger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLSLogger_Example/Pods-QLSLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				629484EFD5DFF8D25FBA74E5 /* Pods_QLSLogger_Example.framework in Frameworks */,
+				F88FF0DC100C2C107A6735B0 /* Pods_QLSLogger_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +69,7 @@
 		4AA14FCA55DBBB8510E2F737 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13AC1BBCC3F6D4CA05005C3D /* Pods_QLSLogger_Example.framework */,
-				3B8958A5D47B6F7CA9BDFD21 /* Pods_QLSLogger_Tests.framework */,
+				B7E405C70269CCCD807BB475 /* Pods_QLSLogger_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
