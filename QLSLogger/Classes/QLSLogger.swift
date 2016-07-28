@@ -151,7 +151,6 @@ public class QLSLogger {
      - parameter functionName: Function name, where log method was called from
      */
     public func verbose(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
-        print(self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName))
         #if DEBUG
             if let verboseLogStack = self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 

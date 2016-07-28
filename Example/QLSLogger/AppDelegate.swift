@@ -20,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         sharedLogger.setupSharedLogInstance()
         
-        sharedLogger.verbose("Application stated!!!", LogModule:.CoreData)
-        
         let masterNavigationController = self.window!.rootViewController as! UINavigationController
         let controller = masterNavigationController.topViewController as! ViewController
         controller.managedObjectContext = self.managedObjectContext
@@ -53,7 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     // MARK: - Core Data stack
-    
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.qlicks.core_data" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)

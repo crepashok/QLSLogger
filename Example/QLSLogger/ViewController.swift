@@ -44,6 +44,11 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         return self.fetchedResultsController.sections?.count ?? 0
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
+        sharedLogger.info("The object \(object.valueForKey("timeStamp")!.description) was tapped")
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = self.fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
@@ -65,11 +70,13 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         if editingStyle == .Delete {
             let context = self.fetchedResultsController.managedObjectContext
             let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
+            let objectDescription = object.valueForKey("timeStamp")!.description
+            sharedLogger.debug("\(objectDescription) will be deleted from database", LogModule: .CoreData)
             context.deleteObject(object)
             
             do {
                 try context.save()
-                sharedLogger.debug("\(object) was deleted from database", LogModule: .CoreData)
+                sharedLogger.verbose("\(objectDescription) was deleted from database", LogModule: .CoreData)
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
