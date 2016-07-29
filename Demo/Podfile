@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'QLSLogger_Example' do
     
+    pod 'CocoaLumberjack/Swift', '~> 2.3.0'
+    pod 'SwiftHEXColors', '~> 1.0'
     pod 'QLSLogger', :path => '../'
 
 end
