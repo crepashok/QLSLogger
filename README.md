@@ -1,6 +1,6 @@
 # QLSLogger
 
-[![CI Status](http://img.shields.io/travis/Pasha/QLSLogger.svg?style=flat)](https://travis-ci.org/crepashok/QLSLogger)
+[![CI Status](https://img.shields.io/travis/crepashok/QLSLogger.svg?style=flat)](https://travis-ci.org/crepashok/QLSLogger)
 [![Version](https://img.shields.io/cocoapods/v/QLSLogger.svg?style=flat)](http://cocoapods.org/pods/QLSLogger)
 [![License](https://img.shields.io/cocoapods/l/QLSLogger.svg?style=flat)](http://cocoapods.org/pods/QLSLogger)
 [![Platform](https://img.shields.io/cocoapods/p/QLSLogger.svg?style=flat)](http://cocoapods.org/pods/QLSLogger)
