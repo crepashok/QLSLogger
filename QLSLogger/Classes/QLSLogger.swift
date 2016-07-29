@@ -11,26 +11,32 @@ import CocoaLumberjack
 import SwiftHEXColors
 
 
-public enum LogModule: Int, CustomStringConvertible {
+public enum LogModule: CustomStringConvertible {
     case Http
     case CoreData
     case JSON
     case UI
     case None
+    case Custom(String)
     
     public var description: String {
-        switch self {
-        case .Http:
-            return "HTTP     "
-        case .CoreData:
-            return "CORE-DATA"
-        case .JSON:
-            return "JSON     "
-        case .UI:
-            return "UI       "
-        case .None:
-            return "None     "
-        }
+        let stringValue: String = {
+            switch self {
+            case .Http:
+                return "HTTP"
+            case .CoreData:
+                return "CORE-DATA"
+            case .JSON:
+                return "JSON"
+            case .UI:
+                return "UI"
+            case .None:
+                return "NONE"
+            case .Custom(let name):
+                return name.capitalizedString
+            }
+        }()
+        return stringValue.truncate(10)
     }
 }
 
@@ -50,8 +56,8 @@ public class QLSLogger {
      Console text colors for all log levels. For defining colors was used extension of UIColor: init?(hexString: String)
      */
     private struct ConsoleColor {
-        let verbose  =  UIColor(hexString: "#a9a9a9")
-        let debug    =  UIColor(hexString: "#808283")
+        let verbose  =  UIColor(hexString: "#9f9f9f")
+        let debug    =  UIColor(hexString: "#666666")
         let info     =  UIColor(hexString: "#0c35d3")
         let warning  =  UIColor(hexString: "#e38b38")
         let error    =  UIColor(hexString: "#d83534")
@@ -137,7 +143,7 @@ public class QLSLogger {
         
         let threadLevel = NSThread.isMainThread() ? "UI" : "BG"
         
-        return "\(levelLabel) | \(threadLevel) | \(module.description) | \(fileURL):\(lineNumber) [\(functionName)] \(stringRepresentation)"
+        return "\(levelLabel.truncate(7)) | \(threadLevel) | \(module.description) | \(fileURL):\(lineNumber) [\(functionName)] \(stringRepresentation)"
     }
     
     
@@ -154,7 +160,7 @@ public class QLSLogger {
         #if DEBUG
             if let verboseLogStack = self.generateLogDescription(object, levelLabel: "VERBOSE", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
-                DDLogError(verboseLogStack)
+                DDLogVerbose(verboseLogStack)
                 
             }
         #endif
@@ -192,7 +198,7 @@ public class QLSLogger {
      */
     public func info(object: String, LogModule module: LogModule = .None, fileName: String = #file, lineNumber: Int = #line, functionName: String = #function) {
         #if DEBUG
-            if let infoLogStack = self.generateLogDescription(object, levelLabel: "INFO ", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
+            if let infoLogStack = self.generateLogDescription(object, levelLabel: "INFO", module: module, fileName: fileName, lineNumber: lineNumber, functionName: functionName) {
                 
                 DDLogInfo(infoLogStack)
                 

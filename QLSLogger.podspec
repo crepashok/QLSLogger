@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.version           = '0.1.2'
     s.summary           = 'Tool for displaying logs with different log-levels'
     s.description       = <<-DESC
-Great tool for displaying logs with different log-levels, log-module, thread identifier and log-color
+Tool for displaying logs with different log-levels, log-module, thread identifier and XcodeColors support
                             DESC
 
     s.homepage          = 'https://github.com/crepashok/QLSLogger'

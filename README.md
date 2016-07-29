@@ -9,7 +9,15 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Screenshot
+![alt tag](http://cretsu.name/pods/QLSLogger.png)
+
 ## Requirements
+```ruby
+'CocoaLumberjack/Swift', '~> 2.3.0'
+'SwiftHEXColors', '~> 1.0'
+```
+
 
 ## Installation
 

@@ -15,9 +15,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         sharedLogger.verbose("This is Verbose log. This log is displayed from MAIN THREAD", LogModule: .UI)
-        
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             sharedLogger.debug("This is Debug log. Now we make some work in background thread.")
         }
@@ -30,18 +28,35 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         
         let newValue = NSDate()
         newManagedObject.setValue(newValue, forKey: "timeStamp")
-        
-        // Save the context.
         do {
             try context.save()
             sharedLogger.debug("\(newValue) was added to database", LogModule:.CoreData)
         } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            //print("Unresolved error \(error), \(error.userInfo)")
             abort()
         }
     }
+    
+    
+    @IBAction func rewindButtonTapped(sender: AnyObject) {
+        sharedLogger.info("Rewind Button Tapped", LogModule:.Custom("AUDIO-PLAYER"))
+    }
+    
+    
+    @IBAction func pauseButtonTapped(sender: AnyObject) {
+        sharedLogger.warning("Pause Button Tapped", LogModule:.Custom("AUDIO-PLAYER"))
+    }
+    
+    
+    @IBAction func playButtonTapped(sender: AnyObject) {
+        sharedLogger.error("Play Button Tapped", LogModule:.Custom("AUDIO-PLAYER"))
+    }
+    
+    
+    @IBAction func fastForwardButtonTapped(sender: AnyObject) {
+        sharedLogger.verbose("Fast forward Button Tapped", LogModule:.Custom("AUDIO-PLAYER"))
+    }
+    
+    
 
     // MARK: - Table View
     
@@ -49,15 +64,18 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         return self.fetchedResultsController.sections?.count ?? 0
     }
     
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
         sharedLogger.info("The object \(object.valueForKey("timeStamp")!.description) was tapped")
     }
     
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = self.fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
     }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
@@ -66,10 +84,11 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         return cell
     }
     
+    
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
+
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
@@ -83,17 +102,16 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
                 try context.save()
                 sharedLogger.verbose("\(objectDescription) was deleted from database", LogModule: .CoreData)
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                //print("Unresolved error \(error), \(error.userInfo)")
                 abort()
             }
         }
     }
     
+    
     func configureCell(cell: UITableViewCell, withObject object: NSManagedObject) {
         cell.textLabel!.text = object.valueForKey("timeStamp")!.description
     }
+    
     
     // MARK: - Fetched results controller
     
@@ -103,20 +121,11 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         }
         
         let fetchRequest = NSFetchRequest()
-        // Edit the entity name as appropriate.
         let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
-        
-        // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
-        
-        // Edit the sort key as appropriate.
         let sortDescriptor = NSSortDescriptor(key: "timeStamp", ascending: false)
-        
         fetchRequest.sortDescriptors = [sortDescriptor]
-        
-        // Edit the section name key path and cache name if appropriate.
-        // nil for section name key path means "no sections".
         let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: nil, cacheName: "Master")
         aFetchedResultsController.delegate = self
         _fetchedResultsController = aFetchedResultsController
@@ -124,15 +133,15 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         do {
             try _fetchedResultsController!.performFetch()
         } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            //print("Unresolved error \(error), \(error.userInfo)")
             abort()
         }
         
         return _fetchedResultsController!
     }
+    
+    
     var _fetchedResultsController: NSFetchedResultsController? = nil
+    
     
     func controllerWillChangeContent(controller: NSFetchedResultsController) {
         self.tableView.beginUpdates()
@@ -149,6 +158,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         }
     }
     
+    
     func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
         switch type {
         case .Insert:
@@ -161,6 +171,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
             tableView.moveRowAtIndexPath(indexPath!, toIndexPath: newIndexPath!)
         }
     }
+    
     
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         self.tableView.endUpdates()
