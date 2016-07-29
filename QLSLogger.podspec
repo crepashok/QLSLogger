@@ -18,7 +18,7 @@ Tool for displaying logs with different log-levels, log-module, thread identifie
     s.license           = { :type => 'MIT', :file => 'LICENSE' }
     s.author            = { 'Pasha' => 'pasha@qlicks.nl' }
     s.source            = { :git => 'https://github.com/crepashok/QLSLogger.git', :tag => s.version.to_s }
-    #s.frameworks        = 'UIKit'
+    #s.frameworks       = 'UIKit'
 
     s.requires_arc      = true
     s.source_files      = "QLSLogger/Classes/*.swift"
